@@ -6,6 +6,7 @@ module.exports = {
         filename : "bundle.js" //打包后输出的文件名称
     },
     devServer: {
+        host:"0.0.0.0",
         contentBase: __dirname + "\\src\\public",
         historyApiFallback: true,
         inline: true
