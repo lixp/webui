@@ -5,22 +5,32 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode development",
-    "server": "webpack-dev-server --public localhost:8080 --process --open chrome"
+    "server": "webpack-dev-server --public localhost:8080 --process --open chrome",
+    "build": "webpack --mode production --config ./webpack.production.config.js --progress"
   },
   "author": "lixiaopo",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
+    "babel-plugin-react-transform": "^3.0.0",
     "babel-preset-env": "^7.0.0-beta.3",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "react-transform-hmr": "^1.0.4",
     "style-loader": "^1.0.0",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "mini-css-extract-plugin": "^0.8.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "webpack": "^4.39.3"
